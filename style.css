@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('pics/banner2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper,
+.wrapper2 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    padding: 0 20px;
+}
+
+.img-info {
+    text-align: center;
+}
+
+.vegeta-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.lettering {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+/* Flexbox for the main section */
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        width: 75%;
+    }
+
+    .img-info h2 {
+        font-size: 2.5rem;
+    }
+
+    .img-info p {
+        font-size: 1.1rem;
+    }
+
+    .wrapper2 {
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .img-info2 {
+        width: 45%;
+        text-align: left;
+    }
+
+    .lettering {
+        width: 45%;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 80%;
+    }
+
+    /* Set the Vegeta image and text side by side */
+    .img-info {
+        width: 50%;
+        float: left;
+        padding-right: 30px;
+    }
+
+    .img-info2 {
+        width: 50%;
+        float: right;
+        padding-left: 30px;
+    }
+
+    .lettering {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .vegeta-img {
+        width: 50%;
+    }
+
+    .img-info,
+    .img-info2 {
+        padding-top: 40px;
+    }
+
+    /* Flexbox layout for the right side content */
+    .wrapper2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* For content that is right of the image */
+    .img-info2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+    }
+
+    .img-info2 h2 {
+        font-size: 2rem;
+        color: white;
+    }
+
+    .img-info2 p {
+        color: white;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
